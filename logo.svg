@@ -1,7 +1,1 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <g fill="#3A1853">
-    <rect x="24" y="24" width="52" height="15" rx="5"/>
-    <rect x="42.5" y="24" width="15" height="52" rx="5"/>
-  </g>
-  <circle cx="50" cy="84" r="5" fill="#DE9D1E"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="84 84 192 236"><defs><linearGradient id="v" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a2a78"/><stop offset=".5" stop-color="#c48cff"/><stop offset="1" stop-color="#4a2a78"/></linearGradient></defs><g transform="translate(50 50) scale(1)"><path d="M47 46 L88.5 205 L130 46 M130 46 L171.5 205 L213 46" fill="none" stroke="url(#v)" stroke-width="18" stroke-linejoin="miter" stroke-miterlimit="20"/><path fill="url(#v)" d="M79.5 200 H97.5 V248 H162.5 V200 H180.5 V266 H79.5 Z"/><path fill="#2b1748" d="M38 38 H222 V64 H145 V266 H115 V64 H38 Z"/></g></svg>
