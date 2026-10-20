@@ -4,71 +4,83 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Impressum &amp; Datenschutz / Legal Notice &amp; Privacy | The Empire Within</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
 <style>
   :root {
-    --bg: #1a0b2e;
-    --panel: #2a0f45;
-    --panel-edge: #3b1a5e;
-    --text: #ffffff;
-    --muted: #b9a8d4;
-    --gold: #e8a91c;
-    --violet: #b04aff;
+    --paper: #ffffff;
+    --purple: #3b1a5e;
+    --footer: #f2f2f2;
+    --line: #e3e3e3;
+    --text: #111111;
+    --muted: #555555;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--bg);
+    background: var(--paper);
     color: var(--text);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.65;
   }
-  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
-  header { margin-bottom: 32px; }
+  main { max-width: 960px; margin: 0 auto; padding: 8px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
   header .brand {
-    color: var(--gold);
+    color: var(--purple);
     letter-spacing: .18em;
     text-transform: uppercase;
     font-size: .8rem;
-    margin: 0 0 8px;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-  h1 { margin: 0; font-size: 2rem; color: var(--text); }
-  nav { margin-top: 16px; }
+  h1 { margin: 32px 0 0; font-size: 2rem; color: var(--text); }
+  .topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; padding-top: 16px; padding-bottom: 16px; }
+  nav { margin: 0; }
   nav a {
     display: inline-block;
-    margin-right: 12px;
-    padding: 6px 14px;
-    border: 1px solid #fff;
-    border-radius: 999px;
+    margin-right: 20px;
+    padding: 4px 0;
     color: var(--text);
     text-decoration: none;
     font-size: .9rem;
   }
-  nav a:hover, nav a:focus { background: #fff; color: #000; }
+  nav a:hover, nav a:focus { text-decoration: underline; }
   section.card {
-    border-top: 1px solid var(--panel-edge);
+    border-top: 1px solid var(--purple);
     padding: 32px 0 8px;
     margin-bottom: 8px;
   }
-  h2 { margin: 0 0 16px; color: #fff; font-size: 1.5rem; }
-  h3 { margin: 24px 0 6px; color: #fff; font-size: 1.05rem; }
+  section.card:first-of-type { border-top: 0; }
+  h2 { margin: 0 0 16px; color: var(--text); font-size: 1.5rem; }
+  h3 { margin: 24px 0 6px; color: var(--text); font-size: 1.05rem; }
   p { margin: 0 0 12px; }
-  a { color: #fff; text-underline-offset: 3px; }
+  a { color: var(--text); text-underline-offset: 3px; }
   .muted { color: var(--muted); font-size: .9rem; }
-  footer { margin-top: 24px; color: var(--muted); font-size: .85rem; text-align: center; }
+  footer { margin-top: 48px; background: var(--footer); color: var(--text); font-size: .9rem; }
+  footer .wrap { padding-top: 32px; padding-bottom: 32px; }
+  footer nav { margin-bottom: 16px; }
+  footer p { margin: 0; color: var(--muted); }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <p class="brand">The Empire Within</p>
-    <h1>Impressum &amp; Datenschutz / Legal Notice &amp; Privacy</h1>
+<header class="topbar">
+  <div class="wrap">
+    <p class="brand"><img src="logo.svg" alt="" width="28" height="28">The Empire Within</p>
     <nav>
       <a href="#de">Impressum</a>
       <a href="#datenschutz">Datenschutz</a>
       <a href="#en">Legal Notice</a>
       <a href="#privacy">Privacy</a>
     </nav>
-  </header>
+  </div>
+</header>
+<main>
+  <h1>Impressum &amp; Datenschutz / Legal Notice &amp; Privacy</h1>
 
   <section class="card" id="de" lang="de">
     <h2>Impressum</h2>
@@ -256,7 +268,18 @@
     </p>
   </section>
 
-  <footer>Stand / Last updated: Oktober / October 2026</footer>
 </main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="#de">Impressum</a>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#en">Legal Notice</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <p>Stand / Last updated: Oktober / October 2026</p>
+  </div>
+</footer>
 </body>
 </html>
